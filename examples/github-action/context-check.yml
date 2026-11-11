@@ -1,0 +1,16 @@
+# Copy to .github/workflows/context-check.yml in your project.
+# Fails the build if HANDOFF.md or any exported agent file contains a secret-looking value,
+# and warns when HANDOFF.md is out of date with the code.
+name: Context check
+on: [pull_request]
+permissions:
+  contents: read
+jobs:
+  context:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npx -y github:blitzhash360-web/blitzhash-context-handoff check

@@ -1,0 +1,19 @@
+{
+  "name": "blitzhash-context-handoff",
+  "version": "1.0.0",
+  "description": "One HANDOFF.md for your AI-built project (stack, commands, env var names, TODOs, decisions), converted to Cursor, Claude Code, AGENTS.md, Windsurf, Copilot and Gemini rules. Never exports secret values.",
+  "type": "module",
+  "bin": { "context-handoff": "bin/context-handoff.mjs" },
+  "engines": { "node": ">=18.17" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "demo": "node bin/context-handoff.mjs demo"
+  },
+  "files": ["bin", "src", "examples", "skills", "README.md", "LICENSE"],
+  "keywords": ["ai-agents", "cursor-rules", "claude-code", "agents-md", "handoff", "vibe-coding", "lovable", "context-engineering", "developer-tools"],
+  "author": "BlitzHash (https://blitzhash.com)",
+  "license": "MIT",
+  "homepage": "https://blitzhash.com",
+  "repository": { "type": "git", "url": "git+https://github.com/blitzhash360-web/blitzhash-context-handoff.git" },
+  "bugs": { "url": "https://github.com/blitzhash360-web/blitzhash-context-handoff/issues" }
+}
